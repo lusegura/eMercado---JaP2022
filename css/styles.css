@@ -216,3 +216,30 @@ a.custom-card:hover {
  .campo{
   background-color: skyblue;
  }
+ .subtitulo{
+color:blue;
+ };
+.checked {
+  color: orange;
+}
+.comentarioEstilo{
+  padding-left: 90px;
+} 
+.division{
+  margin-right: 800px;
+}
+.textoArea{
+  width: 400px;
+  height: 70px;
+}
+.seleccionPuntos{
+  width: 175px;
+  height: 30px;
+}
+.enviarComentario{
+  border-radius: 10px;
+  height: 40px;
+  width: 70px;
+  background-color: #0087F7;
+  color: #fff;
+}
