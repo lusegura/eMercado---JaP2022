@@ -37,7 +37,7 @@
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
                 <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
-                <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+                <li><a class="dropdown-item" href="index.html" id="cerrarSesion">Cerrar sesión</a></li>
               </ul>
             </div>
           </li>
@@ -46,10 +46,56 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
+    <h2 class="textCarritoTitle"><strong>Carrito de compras</strong></h2>
+    <div class="container" >
+      <h5 class="textCarrito">Artículos a comprar</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Costo</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="carrito">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <br><hr class="division1">
+      <h5 class="textCarrito">Tipo de envío</h5>
+      <form class="was-validated opcionEnvio">
+      <input type="radio" class="form-check-input" id="validationFormCheck1" name="envio" value="Premium" required> Premium 2 a 5 días (15%)</input><br>
+      <input type="radio" class="form-check-input" id="validationFormCheck2" name="envio" value="Express"> Express 5 a 8 días (7%)</input><br>
+      <input type="radio" class="form-check-input" id="validationFormCheck3" name="envio" value="Standard"> Standard 12 a 15 días (5%)</input><br>
+     </form>
+     <h5 class="textCarrito">Dirección de envio</h5>
+      <form class="was-validated datosEnvio">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+             <label for="validationTextarea" class="form-label">Calle</label>
+             <input class="form-control" id="validationTextarea" type="address" required></input>
+            </div>
+            <div class="col-2">
+             <label for="validationTextarea" class="form-label numeroEnvio">Número</label>
+             <input class="form-control" id="validationTextarea" type="number" required></input>
+            </div>
+            <div class="col-6">
+             <label for="validationTextarea" class="form-label">Esquina</label>
+             <input class="form-control" id="validationTextarea" type="address" required></input>
+            </div>
+          </div>
+        </div>
+      </form>
+        <button type="submit" class="btn btn-success botonComprar">Comprar!</button>
+     
+      
+      <!-- <div class="alert alert-danger text-center" role="alert">
         <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+      </div> -->
     </div>
   </main>
   <footer class="text-muted">
@@ -74,6 +120,7 @@
   <script src="js/init.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/infoLogin.js"></script>
+  <script src="js/cerrarSesion.js"></script>
 </body>
 
 </html>
