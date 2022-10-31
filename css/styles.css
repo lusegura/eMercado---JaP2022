@@ -195,27 +195,14 @@ a.custom-card:hover {
  width: 100%;
 }
 
-.boton{
-  background-color:orange;
-  color:white;
-  margin: 30px 50px; 
-}
 .imagen-auto{
- width: 350px;
+ width: 300px;
 }
 .infoAutos{
   float: right;
- }
- .infoLogin{
-  color:#53C0FB;
- }
- .boton{
-  background-color:orange ;
-  color:black;
- }
- .campo{
-  background-color: skyblue;
- }
+}
+
+
  .subtitulo{
 color:blue;
  };
@@ -223,18 +210,18 @@ color:blue;
   color: orange;
 }
 .comentarioEstilo{
-  padding-left: 90px;
+  margin-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
 } 
-.division{
-  margin-right: 800px;
-}
+
 .textoArea{
   width: 400px;
   height: 70px;
 }
 .seleccionPuntos{
-  width: 175px;
-  height: 30px;
+  width: 200px;
+  height: 40px;
 }
 .enviarComentario{
   border-radius: 10px;
@@ -243,3 +230,45 @@ color:blue;
   background-color: #0087F7;
   color: #fff;
 }
+
+.imagen-productoRelacionado{
+  width: 250px;
+ }
+ .nombreProducto{
+  padding-top: 40px;
+ }
+ 
+ .inicio{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px
+ }
+ .imgLogin{
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 5px;
+ }
+ .botonera{
+  padding-top: 25px;
+  padding-bottom: 20px;
+ }
+ .tarjeta{
+  margin-left: 100px;
+  margin-right: -75px;
+  margin-bottom: 20px;
+ }
+ .card-img-top{
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-left: 12px;
+  width:350px;
+ }
+ .card-text{
+  text-align: center;
+ }
+
+ .carusel{
+  width:600px;
+  margin-bottom:20px;
+ }
+
