@@ -206,3 +206,13 @@ a.custom-card:hover {
 .infoAutos{
   float: right;
  }
+ .infoLogin{
+  color:#53C0FB;
+ }
+ .boton{
+  background-color:orange ;
+  color:black;
+ }
+ .campo{
+  background-color: skyblue;
+ }
