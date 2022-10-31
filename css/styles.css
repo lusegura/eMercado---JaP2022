@@ -271,4 +271,54 @@ color:blue;
   width:600px;
   margin-bottom:20px;
  }
-
+.imagen-carrito{
+  width: 125px;
+}
+.opcionEnvio{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.datosEnvio{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.textCarritoTitle{
+  text-align: center;
+  margin: 35px;
+}
+.textCarrito{
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.opcionEnvio{
+  margin-left: 50px;
+}
+.datosEnvio{
+  margin-left: 40px;
+}
+.botonComprar{
+  width: 250px;
+  height: 60px;
+  margin-top: 20px;
+}
+.division1{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#costo{
+  background-color: white;
+  border: white;
+  color:black;
+}
+#moneda{
+  padding-right: 0px;
+}
+#subtotal{
+  padding-left: 0px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
