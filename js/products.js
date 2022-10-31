@@ -46,17 +46,22 @@ function mostrarAutos(array){
         if ((min == undefined && max == undefined)||(products.cost >= min && products.cost <= max)||
         (products.cost >= min && max == undefined)||(products.cost <= max && min == undefined)){
             htmlContentToAppend += `
-    <div class="container" id="autos">
+   
+    <li class="list-group-item" id="autos">
     <div onclick="setProductID(${products.id})" class="list-group-item list-group-item-action cursor-active">
+    <div class="row">
+    <div class="col-4">
      <img src="` + products.image + `" alt="product image" class="imagen-auto">
-     <div class=infoAutos>
+     </div>
+     <div class="col infoAutos">
       <h4>` + products.name + `</h4>
       <h4>`+ products.currency +" "+ products.cost+ `</h4>
       <p>`+ products.description +`</p>
       <small >`+ products.soldCount +`</small>
       </div>
+      </li>
       </div>
-    </div>
+    
     `
     document.getElementById("autos").innerHTML= htmlContentToAppend
 }}  
@@ -116,4 +121,4 @@ function setProductID(id) {
     localStorage.getItem("ProductID",ProductID);
     setProductID();
 }); 
-/* SE AGREGO LAS LINEAS 50js Y DE LA LINEA 111 A LA 119 PARA LA CONSIGNA 1 DE LA ENTREGA 3 */
+
