@@ -188,3 +188,21 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+.datos{
+ 
+ background-color: skyblue;
+ margin: auto;
+ width: 100%;
+}
+
+.boton{
+  background-color:orange;
+  color:white;
+  margin: 30px 50px; 
+}
+.imagen-auto{
+ width: 350px;
+}
+.infoAutos{
+  float: right;
+ }
