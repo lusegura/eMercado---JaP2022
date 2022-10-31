@@ -31,14 +31,26 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
+            <p class="infoLogin" id="infoLogin"></p>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <main class="pb-5 container">
-    <div class="container" id="autos">
+    <div class="botonera">
+      <button class="boton" id="ordenAscendente">ordenar ascendente precio</button>
+      <button class="boton" id="ordenDescendente">ordenar descendente precio</button>
+      <button class="boton" id="relevancia">relevancia (cant. vendidos)</button>
+      <div>
+        <input class="campo" type="number" placeholder="min" id="min">
+        <input class="campo" type="number" placeholder="max" id="max">
+        <button class="boton" id="filtro">filtro</button>
+      <button class="boton" id="limpiar">limpiar filtro</button>
+      </div>
+      <div class="container" id="autos">
       
+      </div>
       <!-- <div class="alert alert-danger text-center" role="alert">
         <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
       </div> -->
@@ -65,6 +77,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/products.js"></script>
+  <script src="js/infoLogin.js"></script>
 </body>
 
 </html>
