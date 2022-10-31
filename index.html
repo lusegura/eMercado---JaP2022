@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>eMercado - Todo lo que busques está aquí</title>
-  
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
@@ -17,28 +17,48 @@
 </head>
 
 <body>
-  <main class="mt-5">
-    <div class="container">    
-      <div class="datos">
-      <label>e-mail</label><br>
-      <input type="e-mail" placeholder="e-mail@ejemplo.com" id="email" ></input><br>
-      <label>contraseña</label><br>
-     <input type="password" placeholder="contraseña" id="password" ></input> <br> 
-     <button class="boton" id="login">Ingresar</button>
+
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-3 text-center">
+            <img src="img/login.png" class="imgLogin">
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase text-info">INICIO DE SESION</h2>
+              <div class="form-outline form-white mb-4 inicio">
+                <label class="form-label" for="e-mail">E-mail</label>
+                <input type="e-mail" placeholder="e-mail@ejemplo.com"
+                  class="form-control form-control-lg bg-dark text-white" id="email"></input>
+              </div>
+              <div class="form-outline form-white mb-4 inicio">
+                <label class="form-label" for="Password">Contraseña</label>
+                <input type="password" placeholder="contraseña" class="form-control form-control-lg bg-dark text-white"
+                  id="password"></input>
+              </div>
+            <div class="inicio">
+              <button class="btn btn-outline-light btn-lg px-5" type="submit" id="login">Ingresar</button>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </main>
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
-        2022</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
-    </div>
-  </footer>
-  <script src="js/login.js"></script>
+
+
+    <footer class="text-muted">
+      <div class="container inicio">
+        <p class="float-end">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
+          -
+          2022</p>
+        <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+      </div>
+    </footer>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

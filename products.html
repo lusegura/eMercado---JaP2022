@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 justify-content-between">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="portada.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="categories.html">Categorías</a>
@@ -31,7 +31,19 @@
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
           <li class="nav-item">
-            <p class="infoLogin" id="infoLogin"></p>
+            <div class="dropdown">
+              <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <p class="infoLogin" id="infoLogin"></p>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
+                <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
+                <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+              </ul>
+            </div>
+<!-- ENTREGA 4 = MENU DESPLEGABLE C/NOMBRE USUARIO COMO BOTON, AL DESPLEGAR MOSTRAR Y REDIRIGIR A CARRITO, PERFIL, CERRAR SESION
+    LINEAS DE LA 34 A LA 43
+    ESTO SE MODIFICO EN TODOS LOS ARCHIVOS HTML MENOS EN INDEX (OSEA: PRODUCTS, PRODUCT-INFO, PORTADA, MY-PROFILE, CAREGORIES, SELL, CART) -->
           </li>
         </ul>
       </div>
@@ -39,22 +51,25 @@
   </nav>
   <main class="pb-5 container">
     <div class="botonera">
-      <button class="boton" id="ordenAscendente">ordenar ascendente precio</button>
-      <button class="boton" id="ordenDescendente">ordenar descendente precio</button>
-      <button class="boton" id="relevancia">relevancia (cant. vendidos)</button>
-      <div>
-        <input class="campo" type="number" placeholder="min" id="min">
-        <input class="campo" type="number" placeholder="max" id="max">
-        <button class="boton" id="filtro">filtro</button>
-      <button class="boton" id="limpiar">limpiar filtro</button>
-      </div>
-      <div class="container" id="autos">
-      
+      <button class="btn btn-outline-info" id="ordenAscendente">ordenar ascendente precio</button>
+      <button class="btn btn-outline-info" id="ordenDescendente">ordenar descendente precio</button>
+      <button class="btn btn-outline-info" id="relevancia">relevancia (cant. vendidos)</button>
+      <input class="btn btn-light text-dark" type="number" placeholder="min" id="min">
+      <input class="btn btn-light text-dark" type="number" placeholder="max" id="max">
+      <button class="btn btn-outline-info" id="filtro">filtro</button>
+      <button class="btn btn-outline-info" id="limpiar">limpiar filtro</button>
+    </div>
+    
+      <div class="container">
+        <ul class="list-group list-group-flush AutoEstilo">
+          <li class="list-group-item" id="autos">
+          </li>
+        </ul>
       </div>
       <!-- <div class="alert alert-danger text-center" role="alert">
         <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
       </div> -->
-    </div>
+    
   </main>
   <footer class="text-muted">
     <div class="container">
