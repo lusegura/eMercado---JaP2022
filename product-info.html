@@ -10,6 +10,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -38,10 +39,28 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
+    <div class="container" id="infoProducto">
+      <!-- <div class="alert alert-danger text-center" role="alert">
         <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+      </div> -->
+    </div>
+    <div class="comentarioEstilo" id="comentarios">
+      <p id="estrellas"></p>
+    </div>
+    <div class="comentarioEstilo" id="mandarComentario">
+      <h5 class="subtitulo">Comentar:</h5><br>
+      <p>Tu opinión:</p>
+      <textarea class="textoArea" id="textoArea"></textarea><br><br>
+      <p>Tu puntuación:<p>
+      <select class="seleccionPuntos" id="seleccionPuntos" required>
+        <option value=""  hidden select disable>Elige una puntuación</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select><br><br>
+      <button type="submit" class="enviarComentario" id="botonComentario">enviar</button>
     </div>
   </main>
   <footer class="text-muted">
